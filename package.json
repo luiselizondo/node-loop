@@ -1,6 +1,6 @@
 {
   "name": "node-loop",
-  "version": "1.0.22",
+  "version": "1.0.3",
   "description": "A simple method that loops through an array to transform it.",
   "main": "./index.js",
   "directories": {
