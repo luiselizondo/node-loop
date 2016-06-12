@@ -1,6 +1,6 @@
 {
   "name": "node-loop",
-  "version": "1.0.1",
+  "version": "1.0.22",
   "description": "A simple method that loops through an array to transform it.",
   "main": "./index.js",
   "directories": {
@@ -24,7 +24,8 @@
     "should": "^8.3.0"
   },
   "dependencies": {
-    "lodash": "^4.7.0"
+    "lodash": "^4.7.0",
+    "q": "^1.4.1"
   },
   "bugs": {
     "url": "https://github.com/luiselizondo/node-loop/issues"
