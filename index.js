@@ -14,8 +14,15 @@ var _ = require("lodash");
  */
 function asyncLoop(arr, callback, next) {
   var counter = 0;
-  var total = arr.length;
   var results = [];
+
+  var total;
+  if(arr.length === undefined) {
+    total = _.size(arr);
+  }
+  else {
+    total = arr.length;
+  }
 
   _.each(arr, function(element, index) {
     callback(element, function(err, result) {

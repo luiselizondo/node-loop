@@ -75,23 +75,33 @@ describe("Loop", function() {
       })
     });
 
-    // it("Should return an error when not sending an array", function(done) {
-    //   function tick() {
-    //     return null;
-    //   }
-    //
-    //   loop.promise("Message", tick)
-    //   .then(function(result) {
-    //     done();
-    //   })
-    //   .fail(function(err) {
-    //     err.shoule.be.an.InstanceOf(Error);
-    //     err.message.should.be.equal("The first argument must be an array");
-    //     done();
-    //   })
-    //   .fin(function() {
-    //     done();
-    //   })
-    // })
+    it("Should be able to loop through an object", function(done) {
+      var object = {
+        one: {
+          name: "Bill"
+        },
+        two: {
+          name: "John"
+        },
+        three: {
+          name: "Thomas"
+        }
+      };
+
+      function tick(obj, next) {
+        setTimeout(function() {
+          return next(null, obj);
+        }, 2250);
+      }
+
+      loop.async(object, tick, function(err, results) {
+        should.not.exist(err);
+        results[0].should.have.property("name", "Bill");
+        results[1].should.have.property("name", "John");
+        results[2].should.have.property("name", "Thomas");
+        done();
+      });
+
+    })
   })
 });
