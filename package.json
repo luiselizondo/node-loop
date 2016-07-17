@@ -21,6 +21,7 @@
   "author": "Luis Elizondo",
   "license": "MIT",
   "devDependencies": {
+    "mocha": "^2.5.3",
     "should": "^8.3.0"
   },
   "dependencies": {
