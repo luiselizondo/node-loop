@@ -1,4 +1,6 @@
 # Node Loop
+[![Build Status](https://travis-ci.org/luiselizondo/node-loop.svg?branch=master)](https://travis-ci.org/luiselizondo/node-loop)
+
 Helper method to loop through an array. Returns a promise.
 
 # Install
