@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.12'
+- '6'
+- '5'
+- '4'
+deploy:
+  provider: npm
+  email: lelizondo@gmail.com
+  api_key:
+    secure: OXQ0ci+YP00RSuo/6idR1zPDYy/zcL3YJJ1ynNNjGesLRm88CI5f7TOu8at0UHdKO4qOHAPMlx9nu4zC7X65Giu+A5/F2Y3vk4zMkkimvQnhyiXgbla/XPZwmZS1HCFXwucHyZuO4WZ+zbPkskHyZT4U9nMg/OY/E7oK3ui7A0DE/HcUKD46V1+3AJpBOqLF/CY4/c/3BG2zoQ5keHg7KSwsQuiY27pfbaY2tmPBGEN58XEfvqLpUQG47Z/Tf2t+G/c46lnagts6j6Hq8Fsdc3TlZAu6myBrSb6vVNFlE08wWD0Alg1lI4/wBhcNXSA7XCyFiHa23Tz2DKvfxE9JtcSHS4yliuwMmrJmChwrDDChI5DZct3KuSCQJK5Uo74T5m8fS3NTyEJTIERnwL8hWTwk6AsMc52p183tBaX64Yon+KLz0nrjHA5CxmcWwrTjQYN9q/F7NrCV+V59+kAKKcbR8K7WqwJ5y6jMAV1UC4bh8S5myiXD3CfzJHX+IQ7ZEIGyVzXCXLDy5lolBtwWDsQTiwvK++ZzjfLwnkigchvyU8i8igw+Q3EhvLxghIN57y982szeKHC2Vyv4twZa9GCOWCFkt6YxgigffEXoPGkZVeM/ZDpfzZjOJqMvQklFvUBAl3WMJI1MYkav0Rizs1W7a+vzB8hLyLUzTBasLeY=
+  on:
+    tags: true
+    repo: luiselizondo/node-loop
